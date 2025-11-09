@@ -18,5 +18,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   localStorage.setItem("pdid_", params.get("pdid"));
   localStorage.setItem("params_", params);
 
-  window.location.href = "langs/" + defaultLanguage + "/index.html";
+  // window.location.href = "langs/" + defaultLanguage + "/index.html";
+  window.location.href = "langs/hu/index.html";
 });
