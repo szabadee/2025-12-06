@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICS - Jubilejná narodeninová oslava</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- style sheets and font icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body onload="startLoader()">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="navbar">
+            <div class="row text-right">
+                <div class="col-12 col-lg-4"></div>
+                <div class="col-12 col-lg-4"></div>
+                <div class="col-12 col-lg-4">
+                    <select id="languages" onChange="selectElement()" class="fs-14">
+                        <option value="none">Iné jazyky</option>
+                        <option value="en">Angličtina</option>
+                        <option value="hu">Maďarčina</option>
+                        <option value="de">Nemčina</option>
+                        <option value="ro">Rumunský</option>
+                        <option value="rs">Srb</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <img src="../../images/party-header-780-400.jpg" alt="jubileumi szülideňi party">
+            </div>
+            <div class="container-text mt-neg40">
+                <div class="row text-center">
+                    <h1>
+                        <span class="text-primary-color fs-40">
+                            <span class="material-icons" style="font-size: 48px;">celebration</span>
+                        </span>
+                        Jubilejná narodeninová oslava
+                        <span class="text-primary-color icon-mirror">
+                            <span class="material-icons" style="font-size: 48px;">celebration</span>
+                        </span>
+                    </h1>
+                    <h3 class=""><strong>Jedna dekáda v službách zdravia!</strong></h3>
+                    <h3>Srdečne pozývame všetkých našich milých poradcov spolu s jednou osobou ako hosťom, aby sme
+                        spoločne oslávili 10. výročie založenia našej spoločnosti!
+                    </h3>
+                </div>
+                <div class="row mt-30">
+                    <div class="col-lg-6">
+                        <div class="card bg-primary-color text-white mb-3" style="border: 0px;">
+                            <div class="card-header bg-primary-color-dark">
+                                <span class="material-icons">calendar_month</span>
+                                Dátum
+                            </div>
+                            <div class="card-body">
+                                <h4 class="mt-0 mb-0">14. júna 2025 <span class="fw-400">(sobota)</span><br>
+                                    Začiatok: 15:00<br>
+                                    Otvorenie brán: 14:30</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card bg-secondary-color text-white mb-3" style="border: 0px;">
+                            <div class="card-header bg-secondary-color-dark"><span
+                                    class="material-icons">location_on</span>
+                                Miesto</div>
+                            <div class="card-body">
+                                <h4 class="mt-0 mb-0">IH Rendezvényközpont<br>
+                                    6721 Szeged<br>
+                                    Felső Tisza-part 2.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-block text-center">
+                    <img src="../../images/ih-rendezvenykozpont.jpg" alt="IH Rendezvényközpont" class="profile-img">
+                </div>
+
+                <!-- PROGRAM SECTION START -->
+
+                <div class="row" id="program">
+                    <div class="mt-30 mb-15 d-block text-center">
+                        <mark>
+                            <span class="justify-content-center text-center text-white">
+                                <strong>NÁVRH PROGRAMU</strong>
+                            </span>
+                        </mark>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <span>
+                            <strong>15:00 - 16:00
+                                <span class="text-primary-color">
+                                    <span class="material-icons">workspace_premium</span>
+                                </span>
+                            </strong>
+                        </span>
+                        <ul>
+                            <li> Oficiálne otvorenie</li>
+                            <li> Ocenenie nových úrovní</li>
+                            <li> Hodnotenie desaťročia</li>
+                        </ul>
+                        <span>
+                            <strong>16:00 - 17:00
+                                <span class="text-primary-color">
+                                    <span class="material-icons">cake</span>
+                                </span>
+                            </strong>
+                        </span>
+                        <ul>
+                            <li> Narodeninová torta</li>
+                        </ul>
+                        <span>
+                            <strong>17:00 - 18:45
+                                <span class="text-primary-color">
+                                    <span class="material-symbols-outlined">nightlife</span>
+                                </span>
+                                Party Show 1.
+                                <span class="text-primary-color">
+                                    <span class="material-symbols-outlined">taunt</span>
+                                </span>
+                            </strong>
+                        </span>
+                        <ul>
+                            <li> <span class="text-primary-color"><strong>Danny Blue</strong></span><br>
+                                <i>Najznámejší mentalista v Maďarsku</i>
+                            </li>
+                            <li> <span class="text-primary-color"><strong>Bereczki Zoltán</strong></span><br>
+                                <i>Umelec ocenený cenami EMeRTon a Fonogram</i>
+                            </li>
+                        </ul>
+
+                        <span>
+                            <strong>18:45 - 19:30
+                                <span class="text-primary-color">
+                                    <span class="material-icons">coffee</span>
+                                    <span class="material-icons-outlined">local_bar</span>
+                                </span>
+                            </strong>
+                        </span>
+                        <ul>
+                            <li> Káva, nealko, koktaily</li>
+                            <li> Sladké občerstvenie</li>
+                        </ul>
+
+                        <span>
+                            <strong>19:30 - 20:00
+                                <span class="text-primary-color">
+                                    <span class="material-symbols-outlined">nightlife</span>
+                                </span>
+                                Party Show 2.
+                                <span class="text-primary-color">
+                                    <span class="material-symbols-outlined">taunt</span>
+                                </span>
+                            </strong>
+                        </span>
+                        <ul>
+                            <li> <span class="text-primary-color"><strong>Dr BRS</strong></span><br>
+                                <i>Náš „profesionálny“ interpret – doktor dobrej nálady</i>
+                            </li>
+                        </ul>
+
+                        <span><strong>20:00 - 20:30</strong>
+                            <span class="text-primary-color">
+                                <span class="material-symbols-outlined">redeem</span>
+                            </span>
+                        </span>
+                        <ul>
+                            <li> Žrebovanie výhier</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-lg-0 pt-10">
+                        <span class="d-block text-center">
+                            <span class="text-primary-color">
+                                <span class="material-icons">star</span>
+                            </span>
+                            <span class="text-primary-color fs-22"><strong>Hviezdni hostia</strong></span>
+                            <span class="text-primary-color">
+                                <span class="material-icons">star</span>
+                            </span>
+                        </span>
+                        <div class="d-block text-center mt-15 mb-10">
+                            <img src="../../images/celebs-350x650.jpg" alt="sztárfellépők" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- PROGRAM SECTION END -->
+
+                <!-- PRIZE DRAW SECTION START -->
+
+                <div class="row" id="prizedraw">
+                    <div class="mt-10 mb-15 d-block text-center">
+                        <mark>
+                            <span id="prize-draw" class="justify-content-center text-center text-white">
+                                <strong>VÝZVA NA ÚČASŤ V SÚŤAŽI</strong>
+                            </span>
+                        </mark>
+                    </div>
+                    <div class="mb-15">
+                        <span>Pri príležitosti nášho jubilejného narodenia, okrem radosti a možnosti oslavovať spoločne,
+                            <strong>ponúkame peňažné výhry v celkovej hodnote 10 miliónov forintov</strong>, ktoré
+                            vyžrebujeme počas
+                            podujatia.
+                        </span>
+                    </div>
+
+                    <div class="mb-15">
+                        <span class="text-primary-color"><strong>Nazbieraj aspoň 3 500 kreditov na svoju vernostnú kartu
+                                N.I.C.S. medzi 1. májom 2025 a 12. júnom 2025, aby si sa dostal do osudovej
+                                gule!</strong>
+                        </span>
+                    </div>
+
+                    <div class="row justify-content-center mb-30">
+                        <div class="col-lg-6 col-12">
+                            <span class="d-block text-lg-center pb-10"><strong>Koniec súťaže:</strong><br>
+                                12. júna 2025 (štvrtok), o polnoci<br></span>
+                            <!-- Countdown Timer -->
+                            <div class="timer-container">
+
+                                <div class="countdown-timer" id="countdownTimerPrize" data-date="2000-01-01"
+                                    data-time="23:59:00">
+                                    <div class="time-box-prz">
+                                        <div class="number-wrapper-prz">
+                                            <span class="current days">00</span>
+                                            <span class="next days">00</span>
+                                        </div>
+                                        <span class="label">deň</span>
+                                    </div>
+                                    <div class="time-box-prz">
+                                        <div class="number-wrapper-prz">
+                                            <span class="current hours">00</span>
+                                            <span class="next hours">00</span>
+                                        </div>
+                                        <span class="label">hod</span>
+                                    </div>
+                                    <div class="time-box-prz">
+                                        <div class="number-wrapper-prz">
+                                            <span class="current minutes">00</span>
+                                            <span class="next minutes">00</span>
+                                        </div>
+                                        <span class="label">min</span>
+                                    </div>
+                                    <div class="time-box-prz">
+                                        <div class="number-wrapper-prz">
+                                            <span class="current seconds">00</span>
+                                            <span class="next seconds">00</span>
+                                        </div>
+                                        <span class="label">sek</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <span>Ak budeš medzi šťastne vyžrebovanými, získaš jednu z nižšie uvedených peňažných výhier – a
+                            máš možnosť zdvojnásobiť výhru! <strong>Čo musíš urobiť pre zdvojnásobenie? Príď na
+                                podujatie!</strong>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row text-center mt-15 mb-30">
+                    <span>
+                        <span class="text-primary-color">
+                            <span class="material-symbols-outlined">paid</span>
+                        </span>
+                        <span class="text-primary-color fs-22"><strong>Peňažné výhry</strong></span>
+                        <span class="text-primary-color">
+                            <span class="material-symbols-outlined">money_bag</span>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="fs-700">
+                            <tr>
+                                <th scope="col" style="background-color: rgba(85, 85, 85, 0.1);">Hodnoty</th>
+                                <th scope="col" style="background-color: rgba(191, 57, 135, 0.1);">
+                                    <strong>Ak neprídeš</strong>
+                                </th>
+                                <th scope="col" style="background-color: rgba(24, 157, 158, 0.1);">
+                                    <strong>Ak prídeš</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">10x</th>
+                                <td style="background-color: rgba(191, 57, 135, 0.15);">50 000 Ft</td>
+                                <td style="background-color: rgba(24, 157, 158, 0.2);">100 000 Ft</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10x</th>
+                                <td style="background-color: rgba(191, 57, 135, 0.2);">100 000 Ft</td>
+                                <td style="background-color: rgba(24, 157, 158, 0.3);">200 000 Ft</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5x</th>
+                                <td style="background-color: rgba(191, 57, 135, 0.25);">200 000 Ft</td>
+                                <td style="background-color: rgba(24, 157, 158, 0.4);">400 000 Ft</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3x</th>
+                                <td style="background-color: rgba(191, 57, 135, 0.3);">500 000 Ft</td>
+                                <td style="background-color: rgba(24, 157, 158, 0.5);">1 000 000 Ft</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><strong>Hlavná výhra</strong></th>
+                                <td style="background-color: rgba(191, 57, 135, 0.35);"><strong>1 000 000
+                                        Ft</strong>
+                                </td>
+                                <td style="background-color: rgba(24, 157, 158, 0.6);"><strong>2 000 000
+                                        Ft</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-15">
+                    <span>Spolu teda rozdelíme 10 miliónov forintov medzi tých, ktorí boli s nami počas tejto cesty.
+                        <strong>Nezabudni: zber kreditov sa začína 1. mája 2025, na Sviatok práce! Tak neváhaj, dosiahni
+                            cieľ a
+                            vyskúšaj svoje šťastie! Oslávme to spolu – kto príde, môže vyhrať dvojnásobok!
+                        </strong><span class="material-symbols-outlined">mood</span>
+                    </span>
+                </div>
+
+
+                <div class="mt-15">
+                    <span><a href="../../docs/nics-szulideň-jatekszabalyzat.pdf" target="_blank">Podrobné pravidlá
+                            súťaže (pdf)</a></span>
+                </div>
+
+                <!-- PRIZE DRAW SECTION END -->
+
+                <!-- REGISTRATION SECTION START -->
+
+                <div class="row" id="registration">
+                    <div class="mt-30 mb-15 d-block text-center">
+                        <mark>
+                            <span class="justify-content-center text-center text-white">
+                                <strong>REGISTRÁCIA</strong>
+                            </span>
+                        </mark>
+                    </div>
+                    <div class="mb-15">
+                        <span>Nezávisle od toho, či sa zaregistruješ a či sa osobne zúčastníš podujatia, každý držiteľ
+                            karty, <strong>ktorý dosiahne 3 500 kreditov, sa automaticky zúčastní žrebovania!</strong>
+                            Pre tvoju pomoc zobrazíme počet získaných kreditov nielen vo webovej kancelárii, ale aj tu
+                            na tejto stránke – až do termínu uzávierky registrácie.
+                        </span>
+                    </div>
+                    <div class="mb-15">
+                        <span>Ak v júni postúpiš na novú úroveň a chceš si prevziať svoj certifikát slávnostne na pódiu,
+                            <strong>pošli registráciu najneskôr do 9. júna o polnoci, aby sme sa mohli
+                                pripraviť!</strong>
+                            <!-- <span class="material-symbols-outlined">sentiment_satisfied</span> -->
+                        </span>
+                    </div>
+                </div>
+                <div class="row" id="infoSection">
+                    <div class="col-lg-6 col-12 order-lg-0 order-1">
+                        <p class="nonreg-status-box" id="statusBox">
+                            <span><strong>Meno registrujúcej osoby:</strong></span><br>
+                            <span id="customerName" class="nonreg-customer-name"></span>
+                            <br>
+                            <span id="regStatusInfo">
+                                <strong>Stav registrácie:</strong><br>
+                                <span id="regStatus"></span>
+                                <span class="material-icons text-orange" id="regIcon">error</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="order-lg-1 order-0 col-lg-6 col-12 pb-20">
+                        <span class="d-block pb-10"><strong>Termín uzávierky registrácie:</strong><br>
+                            14. júna 2025 (sobota), 12:00<br></span>
+                        <!-- Countdown Timer -->
+                        <div class="timer-container">
+
+                            <div class="countdown-timer" id="countdownTimer" data-date="2000-01-01"
+                                data-time="23:59:00">
+                                <div class="time-box">
+                                    <div class="number-wrapper">
+                                        <span class="current days">00</span>
+                                        <span class="next days">00</span>
+                                    </div>
+                                    <span class="label">deň</span>
+                                </div>
+                                <div class="time-box">
+                                    <div class="number-wrapper">
+                                        <span class="current hours">00</span>
+                                        <span class="next hours">00</span>
+                                    </div>
+                                    <span class="label">hod</span>
+                                </div>
+                                <div class="time-box">
+                                    <div class="number-wrapper">
+                                        <span class="current minutes">00</span>
+                                        <span class="next minutes">00</span>
+                                    </div>
+                                    <span class="label">min</span>
+                                </div>
+                                <div class="time-box">
+                                    <div class="number-wrapper">
+                                        <span class="current seconds">00</span>
+                                        <span class="next seconds">00</span>
+                                    </div>
+                                    <span class="label">sek</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="regForm">
+                    <div class="row" id="creditInfo">
+                        <div class="col-lg-6 col-12 order-lg-0 order-0">
+                            <p class="guest-box-first" id="guestBox">
+                                <label class="form-label" for="guestName" id="guestNameLabel">Meno
+                                    hosťa:</label><sup>*</sup>
+                                <!-- <span class="material-icons text-purple" id="regIcon">face</span> -->
+                                <input type="text" id="guestName" value="">
+                                <span id="guestErrorMessage" class="input-error-message d-block pt-7 pb-10"></span>
+                                <span id="guestBoxInfo"></span>
+                            </p>
+                        </div>
+                        <div class="order-lg-1 order-1 col-lg-6 col-12 pb-20">
+                            <span class="d-block pb-10">
+                                <strong>Zostatok kreditov pre <a href="#prize-draw">súťaž:</a> </strong>
+                                <br>
+                                Medzi 1. májom a 12. júnom 2025
+                                <br>
+                            </span>
+                            <!-- start counter item -->
+                            <div class="credit-box text-center">
+                                <div id="qualifiedMessage" class="row lh-22">
+                                    <div id="currentCredit" class="col-4 ms-30 pe-0">
+                                        <span class="fs-16">Aktuálny na</span>
+                                        <h2 id="creditBalance" class="text-primary-color counter value" data-akhi="">
+                                        </h2>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="vl"></div>
+                                    </div>
+                                    <div class="col-4 me-0 ps-0 d-block">
+                                        <span class="fs-16">Cieľ</span>
+                                        <h2 class="text-secondary-color">3500</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end counter item -->
+                        </div>
+                    </div>
+                    <div id="gdpr"></div>
+                    <div id="regActions"></div>
+                </form>
+
+                <div id="closedRegBox"></div>
+                <div class="d-flex mt-20" id="messageOnSubmit"></div>
+
+                <!-- REGISTRATION SECTION END -->
+
+                <hr class="mt-40">
+                <div class="footer mt-15">
+                    <div>
+                        Telefón: <a href="tel:+36202627288"> +36 20 262-7288</a> | E-mail: <a
+                            href="mailto:iroda@nics.hu">iroda@nics.hu</a>
+                    </div>
+                    <div>
+                        <span class="icon"><a href="https://www.facebook.com/Natural.Immune.Control.System"><i
+                                    class="fab fa-facebook"></i></a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <img src="../../images/party-footer-780-216.jpg" alt="jubileumi szülideňi party">
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/vendors.min.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
