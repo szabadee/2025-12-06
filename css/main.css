@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #bf3987;
-  --primary-color-dark: #a62871;
+  --primary-color: #ac020b;
+  --primary-color-dark: #860106;
   --primary-color-light: #ffdef0;
-  --primary-color-medium: #e359a9;
-  --secondary-color: #189d9e;
-  --secondary-color-dark: #128586;
-  --secondary-color-medium: #3fbebf;
+  --primary-color-medium: #d40008;
+  --secondary-color: #316c8b;
+  --secondary-color-dark: #3e5f70;
+  --secondary-color-medium: #6ca2b2;
   --blue-dark: #0f2663;
   --base-color: #555;
   --error-color: red;
